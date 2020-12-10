@@ -23,5 +23,5 @@ jobs:
     - name: Build the Docker image
       run: |
         docker build . --file Dockerfile --tag jibinpb/python-pyodbc:$(date +%s)
-        docker push
+        docker image push jibinpb/python-pyodbc:$(date +%s)
       
